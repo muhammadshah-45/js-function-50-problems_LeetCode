@@ -12,3 +12,23 @@ function getValue(obj, key) {
 }
 let person ={name: 'John', age:45}
 console.log(getValue(person, 'name'));
+
+
+
+function getObjValue(obj,key){
+   
+  for (let k in obj) {
+  //  console.log(k);
+  //  console.log(obj);
+   if(k === key) {
+     return obj[k]; // return index 0
+  }
+  return null; //
+   
+}
+}
+let person1 = {names: 'Muhammad',age:45}
+
+let result = getObjValue(person1, 'names');
+
+console.log(result);
